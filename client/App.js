@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, View, StatusBar } from 'react-native';
-import Login from './client/components/login';
-import Register from './client/components/register';
-import ForgetPassword from './client/components/forgetPasswrd';
+import Login from './components/login';
+import Register from './components/register';
+import ForgetPassword from './components/forgetPasswrd';
 import { StackNavigator } from 'react-navigation';
-import LandingPage from './client/components/LandingPage';
+import LandingPage from './components/LandingPage';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});
 
 class Home extends Component {
   static navigationOptions = {
@@ -57,11 +63,6 @@ class Home extends Component {
   }
 });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  }
-});
 export default App;
 AppRegistry.registerComponent(App, () => App );
 

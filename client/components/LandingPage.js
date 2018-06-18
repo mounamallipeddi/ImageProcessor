@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 // import { StackNavigator } from "react-navigation";
+const styles = StyleSheet.create({
+  buttonText: {
+      textAlign: 'center',
+      color: '#FFF',
+      fontWeight: '700'
+    },
+});
+
 export default class LandingPage extends Component {
   static navigationOptions = {
     headerStyle: {
@@ -10,16 +18,8 @@ export default class LandingPage extends Component {
     headerLeft: null
   };
   render() {
-    return <Text style={styles.buttonText}>OLA</Text>;
+    return <View><Text style={styles.buttonText}>OLA</Text></View>;
   }
 }
-
-const styles = StyleSheet.create({
-    buttonText: {
-        textAlign: 'center',
-        color: '#FFF',
-        fontWeight: '700'
-      },
-});
 
 AppRegistry.registerComponent('LandingPage', () => LandingPage);
