@@ -53,6 +53,7 @@ export default class Login extends Component {
               keyboardType="email-address"
               autoCapitalize="none"
               autoCorrect={false}
+              style={styles.text}
               value={this.state.email}
               onChangeText={email => this.setState({ email })}
             />
@@ -60,6 +61,7 @@ export default class Login extends Component {
               placeholder="Password"
               placeholderTextColor="rgba(255,255,255,0.7)"
               returnKeyType="go"
+              style={styles.text}
               secureTextEntry
               ref={input => (this.passwordInput = input)}
               value={this.state.password}
@@ -98,6 +100,16 @@ export default class Login extends Component {
 }
 
 const styles = StyleSheet.create({
+  input: {
+    height: 40,
+    width: 350,
+    marginBottom: 10,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    color: '#fff',
+    paddingHorizontal: 10,
+    justifyContent: 'center',
+    textAlign: 'center'
+  },
   container: {
     flex: 1,
     backgroundColor: '#16a085'

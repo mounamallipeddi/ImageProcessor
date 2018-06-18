@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { AppRegistry, StyleSheet, Text, View } from "react-native";
+import React, { Component } from 'react';
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 //import { StackNavigator } from "react-navigation";
 export default class LandingPage extends Component {
   static navigationOptions = {
     headerStyle: {
-      backgroundColor: "#16a085",
+      backgroundColor: '#16a085',
       elevation: null
     },
     headerLeft: null
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
       },
 });
 
-AppRegistry.registerComponent("LandingPage", () => LandingPage);
+AppRegistry.registerComponent('LandingPage', () => LandingPage);

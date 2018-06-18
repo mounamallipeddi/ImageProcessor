@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     paddingHorizontal: 10,
     justifyContent: 'center',
-    alignSelf: 'center'
+    textAlign: 'center'
   },
   button: {
     height: 50,
