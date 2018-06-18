@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
-//import { StackNavigator } from "react-navigation";
+// import { StackNavigator } from "react-navigation";
 export default class LandingPage extends Component {
   static navigationOptions = {
     headerStyle: {

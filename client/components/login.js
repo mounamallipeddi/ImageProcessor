@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 
 import { Navigation } from 'react-navigation';
-//import Spinner from "react-native-loading-spinner-overlay";
 
 export default class Login extends Component {
   constructor() {
